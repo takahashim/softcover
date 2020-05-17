@@ -32,8 +32,9 @@ jobs:
         sudo apt-get install cabextract xfonts-utils
         wget http://ftp.de.debian.org/debian/pool/contrib/m/msttcorefonts/ttf-mscorefonts-installer_3.6_all.deb
         sudo dpkg -i ttf-mscorefonts-installer_3.6_all.deb
-        sudo apt-get install --no-install-recommends texlive-full texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra fonts-gfs-bodoni-classic
+        sudo apt-get install --no-install-recommends texlive-full texlive-fonts-recommended fonts-gfs-bodoni-classic
         sudo apt-get install inkscape ghostscript
+        sudo apt-get install libcurl4-gnutls-dev
     - name: install calibre
       run: |
         wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh
